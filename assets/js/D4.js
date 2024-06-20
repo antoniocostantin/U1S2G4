@@ -35,13 +35,13 @@ console.log(">>>>>>>>>>ESERZIO 3<<<<<<<<<")
 let crazydiff;
 crazyDiff(5);
 
-function crazyDiff(a1){
+function crazyDiff(a1) {
     if (a1 > 19) {
         console.log(Math.abs(a1 - 19));
-    crazydiff = Math.abs(a1 - 19)*3;
+        crazydiff = Math.abs(a1 - 19) * 3;
         console.log(crazydiff);
     } else {
-       console.log(Math.abs(a1 - 19));
+        console.log(Math.abs(a1 - 19));
     }
 }
 
@@ -52,10 +52,10 @@ function crazyDiff(a1){
 console.log(">>>>>>>>>>ESERZIO 4<<<<<<<<<")
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-boundary = () =>{
-    n = Math.floor(Math.random()*600) +1;
+boundary = () => {
+    n = Math.floor(Math.random() * 600) + 1;
     console.log(n);
-    if((n>20 && n<100)||(n === 400)){
+    if ((n > 20 && n < 100) || (n === 400)) {
         return true;
     } else {
         return false;
@@ -71,15 +71,15 @@ console.log(boundary())
 console.log(">>>>>>>>>>ESERZIO 5<<<<<<<<<")
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let string = "EPICODE che cacchio ne so";
+let string = "giovanii cacchio ne so";
 let Epicode = "EPICODE"
 verify = string.indexOf("EPICODE");
 
 epify()
 
 
-function epify(){
-    if(verify === 0){
+function epify() {
+    if (verify === 0) {
         console.log(string);
     } else {
         string = Epicode + " " + string;
@@ -91,31 +91,88 @@ function epify(){
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
+console.log(">>>>>>>>>>ESERZIO 6<<<<<<<<<")
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function check3and7(p) {
+    p = Math.abs(p);
+    if (p % 3 === 0 || p % 7 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(check3and7(20));
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
+console.log(">>>>>>>>>>ESERZIO 7<<<<<<<<<")
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+reverseString("zokkk ammok a mmmt");
+
+function reverseString(strinG) {
+    let revers = strinG.split("");
+    revers.reverse("");
+    revers = revers.join("");
+    console.log(revers);
+}
+
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
-
+console.log(">>>>>>>>>>ESERZIO 8<<<<<<<<<")
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function upperFirst(string) {
+    let words = string.split(" ");
+    let final = [];
+    for (let i = 0; i < words.length; i++) {
+        first = words[i].charAt(0);
+        first = first.toUpperCase();
+        let cut = words[i].substring(1);
+        let newWord = first + cut;
+        final.push(newWord);
+    }
+    console.log(final.join(' '));
+}
+
+upperFirst("ciao sono mario");
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
-
+console.log(">>>>>>>>>>ESERZIO 9<<<<<<<<<")
 /* SCRIVI QUI LA TUA RISPOSTA */
+function cutString(string) {
+    let words = string.split(" ");
+    let final = [];
+    for (let i = 0; i < words.length; i++) {
+        let wordl = words[i].length -1;
+        let newords = words[i].slice(1,wordl);
+        final.push(newords);
+    }
+    console.log(final.join(' '));
+}
+
+cutString("vengo dalla luna vengo dalla lunas");
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
+console.log(">>>>>>>>>>ESERZIO 10<<<<<<<<<")
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function giveMeRandom(n){
+    let arrEy = [];
+        for(let i=0; i < n; i++){
+            arrEy.push(Math.floor(Math.random() * 10) + 1);
+        }
+    console.log(arrEy);
+}
+
+giveMeRandom(65);
