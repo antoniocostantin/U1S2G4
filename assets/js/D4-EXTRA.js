@@ -5,6 +5,7 @@
  se il suo valore è maggiore di 5 o no.
  La funzione deve inoltre ritornare la somma di tutti i valori maggiori di 5.
 */
+console.log(">>>>>>>>>>EXTRA 1<<<<<<<<<");
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -12,14 +13,14 @@
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "shoppingCartTotal" che calcola il totale dovuto al negozio (tenendo conto delle quantità di ogni oggetto).
 */
-
+console.log(">>>>>>>>>>EXTRA 2<<<<<<<<<");
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* EXTRA 3
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "addToShoppingCart" che riceve un nuovo oggetto dello stesso tipo, lo aggiunge a "shoppingCart" e ritorna il nuovo numero totale degli elementi.
 */
-
+console.log(">>>>>>>>>>EXTRA 3<<<<<<<<<");
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* EXTRA 4

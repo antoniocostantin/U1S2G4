@@ -24,7 +24,7 @@ crazySum = (a, b) => {
     }
 };
 
-console.log(crazySum(2, 76));
+console.log(crazySum(2, 75));
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
@@ -169,10 +169,14 @@ console.log(">>>>>>>>>>ESERZIO 10<<<<<<<<<")
 /* SCRIVI QUI LA TUA RISPOSTA */
 function giveMeRandom(n){
     let arrEy = [];
+    if(n % 1 === 0){
         for(let i=0; i < n; i++){
             arrEy.push(Math.floor(Math.random() * 10) + 1);
         }
     console.log(arrEy);
+    } else {
+        console.log("n deve essere naturale")
+    }
 }
 
 giveMeRandom(65);
